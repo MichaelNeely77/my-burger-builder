@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './Burger.module.css';
+import classes from './Burger.module.css';
 import BurgerIngredient from './BurgerIngredient/BurgerIngredient';
 import { arrayExpression } from '@babel/types';
 
@@ -13,11 +13,11 @@ const burger = (props) => {
         .reduce((arr, el) => {
             return arr.concat(el);
         }, []);
-        if(transformedIngredients == 0) {
+        if(transformedIngredients === 0) {
             transformedIngredients = <p>Please start adding ingredients!</p>
         }
     return (
-        <div className={styles.Burger}>
+        <div className={classes.Burger}>
             <BurgerIngredient type={"bread-top"} />
             {transformedIngredients}
             <BurgerIngredient type={"bread-bottom"} />
