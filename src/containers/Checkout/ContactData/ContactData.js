@@ -59,7 +59,7 @@ class ContactData extends Component {
                    ]
                 },
                 value: ''
-            }
+            },
 
         },
         loading: false
