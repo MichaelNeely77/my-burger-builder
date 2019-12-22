@@ -10,11 +10,19 @@ const input = (props) => {
         inputClasses.push(classes.Invalid);
     }
 
-    let validationError = null;
+    // let validationError = null;
 
-    if (props.Invalid && props.touched) {
-        validationError = <p>Please enter a valid value!"></p>
-    }
+    // if (props.Invalid && props.touched) {
+    //     validationError = <p>Please enter a valid value!"></p>
+    // }
+
+    // return (
+    //     <div className ={classes.label}>{props.label}
+    //         {inputElement}
+    //         {validationError}
+    //     </div>
+
+    // );
 
 
     switch ( props.elementType ) {
